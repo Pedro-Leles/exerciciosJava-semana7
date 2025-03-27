@@ -1,0 +1,28 @@
+// Exercício 3: Simulação de Um Elevador
+package dominio;
+
+public class Elevador {
+    private int andarAtual;
+    private int totalAndares;
+
+    public Elevador(int totalAndares) {
+        this.andarAtual = 0;
+        this.totalAndares = totalAndares;
+    }
+
+    public void subir() {
+        if (andarAtual < totalAndares) {
+            andarAtual++;
+        }
+    }
+
+    public void descer() {
+        if (andarAtual > 0) {
+            andarAtual--;
+        }
+    }
+
+    public void exibirAndar() {
+        System.out.println("Andar atual: " + andarAtual);
+    }
+}
